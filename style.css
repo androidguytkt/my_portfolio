@@ -1,16 +1,17 @@
-*
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-{
+* {
     margin: 0;
     padding: 0;
 }
-body
-{
+
+body {
     background: linear-gradient(90deg, #232731 0%, #182848 100%);
+    font-family: "Lato", sans-serif;
 }
+
 /*hero section*/
-.start
-{
+.start {
     display: flex;
     position: relative;
     justify-content: center;
@@ -20,124 +21,115 @@ body
 
 }
 
-.intro
-{
-    font-family: sans-serif;
+.intro {
     position: absolute;
-    font-size:10vw;
+    font-size: 10vw;
     -webkit-text-stroke: 2px #d4e2ff;
     font-weight: 900;
-    animation: enter 1s ease-in ,  size .25s ease-in-out 1s backwards ;
+    animation: enter 1s ease-in, size .25s ease-in-out 1s backwards;
     color: #d4e2ff;
     z-index: -2;
     top: 10vh;
 }
-.intro_in
-{
-    font-family: sans-serif;
+
+.intro_in {
     position: absolute;
-    font-size:10vw;
+    font-size: 10vw;
     -webkit-text-stroke: 2px #d4e2ff;
     font-weight: 900;
-  -webkit-text-fill-color: transparent;
-  z-index: 1;
-  animation: enter 1s ease-in backwards ,  size .25s ease-in-out 1s backwards;
- 
-  top: 35vh;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    animation: enter 1s ease-in backwards, size .25s ease-in-out 1s backwards;
+
+    top: 35vh;
 }
-.intro_in1
-{
-    font-family: sans-serif;
+
+.intro_in1 {
+    
     position: absolute;
-    font-size:10vw;
+    font-size: 10vw;
     color: #d4e2ff;
     -webkit-text-stroke: 2px #d4e2ff;
     font-weight: 900;
-  z-index: -1;
-  animation: enter 1s ease-in backwards ,  size .25s ease-in-out 1s backwards ;
- 
-  top: 60vh;
+    z-index: -1;
+    animation: enter 1s ease-in backwards, size .25s ease-in-out 1s backwards;
+
+    top: 60vh;
 }
 
 
 /* hero's animations */
-@keyframes enter
-{
-    from
-    {
+@keyframes enter {
+    from {
         opacity: 0%;
     }
-   to
-    {
+
+    to {
         opacity: 100%;
     }
 }
 
-@keyframes size
-{
-    0%
-    {
+@keyframes size {
+    0% {
         font-size: 12vw;
     }
-    100%
-    {
+
+    100% {
         font-size: 10vw;
     }
 }
 
 /* about section */
 
-.about{
-    width:auto;
-    height: 100vh;
+.about {
+    width: auto;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:serif;
+    
     color: #d4e2ff;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-.abin
-{
+.abin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 80vw;
-    height: 80vh;
+    /* height: 80vh; */
     position: relative;
-    border: 1px solid rgba(255, 255,255, 0.27);
+    border: 1px solid rgba(255, 255, 255, 0.27);
     border-radius: 1vw;
-    background-color: rgba(255, 255,255, 0.20);
-    box-shadow: 0 4px  30px rgba(255, 255,255, 0.1);
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
-
+    padding: 45px 20px;
 }
 
-.about_me
-{
+.about_me {
     font-size: 4vw;
     font-weight: 200;
     text-transform: uppercase;
     position: relative;
     text-align: center;
-    padding-top: 10vh;
-    
+    padding-bottom: 50px;
 }
 
-.my_info
-{
-    font-size: 2.5vw;
+.my_info {
+    font-size: 40px;
+    line-height: 1.2;
     position: relative;
-    top: 5vh;
-    padding-left: 15vh;
-    padding-right: 15vh;
-    padding-top: 5vh;
+    /* top: 5vh; */
+    padding: 25px 50px;
+    text-align: center;
 }
 
 /* logo section */
 
-.logo
-{
+.logo {
     width: auto;
     height: 100vh;
     display: flex;
@@ -146,32 +138,46 @@ body
     flex-direction: column;
 }
 
-.works_logo
-{
-font-size: 5vw;
-color: #d4e2ff;
-font-weight: 200;
-position: relative;
-top: 5vh;
+.works_logo {
+    font-size: 5vw;
+    color: #d4e2ff;
+    font-weight: 200;
+    position: relative;
+    top: 5vh;
 }
 
-#logos
-{
+#logos {
     width: 20vw;
     height: 60vh;
     border: 2px solid #d4e2ff;
     margin: 2vw;
     border-radius: .5vw;
-    border: 1px solid rgba(255, 255,255, 0.27);
-    background-color: rgba(255, 255,255, 0.20);
-    box-shadow: 0 4px  30px rgba(255, 255,255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
 }
-.works
-{
+
+.works {
     width: auto;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 767px) {
+
+    .about_me {
+        font-size: 28px;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+
+    .my_info {
+        font-size: 20px;
+        padding: 0;
+    }
 }
