@@ -1,0 +1,169 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #161616;
+}
+/*hero section*/
+.start
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+
+}
+
+.intro
+{
+    font-family: sans-serif;
+    position: absolute;
+    font-size:10vw;
+    -webkit-text-stroke: 2px #d4e2ff;
+    font-weight: 900;
+    animation: enter 1s ease-in ,  size .25s ease-in-out 1s backwards ;
+    color: #d4e2ff;
+    z-index: -2;
+    top: 10vh;
+}
+.intro_in
+{
+    font-family: sans-serif;
+    position: absolute;
+    font-size:10vw;
+    -webkit-text-stroke: 2px #d4e2ff;
+    font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  animation: enter 1s ease-in backwards ,  size .25s ease-in-out 1s backwards;
+ 
+  top: 35vh;
+}
+.intro_in1
+{
+    font-family: sans-serif;
+    position: absolute;
+    font-size:10vw;
+    color: #d4e2ff;
+    -webkit-text-stroke: 2px #d4e2ff;
+    font-weight: 900;
+  z-index: -1;
+  animation: enter 1s ease-in backwards ,  size .25s ease-in-out 1s backwards ;
+ 
+  top: 60vh;
+}
+
+
+/* hero's animations */
+@keyframes enter
+{
+    from
+    {
+        opacity: 0%;
+    }
+   to
+    {
+        opacity: 100%;
+    }
+}
+
+@keyframes size
+{
+    0%
+    {
+        font-size: 12vw;
+    }
+    100%
+    {
+        font-size: 10vw;
+    }
+}
+
+/* about section */
+
+.about{
+    width:auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:serif;
+    color: #d4e2ff;
+   
+    
+}
+
+.abin
+{
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    border: 2px solid;
+    border-radius: 1vw;
+
+}
+
+.about_me
+{
+    font-size: 4vw;
+    font-weight: 200;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    padding-top: 10vh;
+    
+}
+
+.my_info
+{
+    font-size: 2.5vw;
+    position: relative;
+    top: 5vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-top: 5vh;
+}
+
+/* logo section */
+
+.logo
+{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.works_logo
+{
+font-size: 5vw;
+color: #d4e2ff;
+font-weight: 200;
+position: relative;
+top: 5vh;
+}
+
+#logos
+{
+    width: 20vw;
+    height: 60vh;
+    border: 2px solid #d4e2ff;
+    margin: 2vw;
+    border-radius: .5vw;
+}
+.works
+{
+    width: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
