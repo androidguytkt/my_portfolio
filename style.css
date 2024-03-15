@@ -83,7 +83,7 @@ body {
 
 .about {
     width: auto;
-    /* height: 100vh; */
+ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,15 +98,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80vw;
+    width: 70vw;
     /* height: 80vh; */
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.27);
     border-radius: 1vw;
     background-color: rgba(255, 255, 255, 0.20);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
-    padding: 45px 20px;
+    padding: 15px 20px;
 }
 
 .about_me {
@@ -115,11 +115,11 @@ body {
     text-transform: uppercase;
     position: relative;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .my_info {
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1.2;
     position: relative;
     /* top: 5vh; */
@@ -131,7 +131,7 @@ body {
 
 .logo {
     width: auto;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,42 +142,77 @@ body {
     font-size: 5vw;
     color: #d4e2ff;
     font-weight: 200;
-    position: relative;
-    top: 5vh;
+    padding-top: 75px;
 }
 
 #logos {
-    width: 20vw;
-    height: 60vh;
+    width: 180px;
+    height: 230px;
     border: 2px solid #d4e2ff;
     margin: 2vw;
     border-radius: .5vw;
     border: 1px solid rgba(255, 255, 255, 0.27);
     background-color: rgba(255, 255, 255, 0.20);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
+
 }
 
 .works {
     width: auto;
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 @media (max-width: 1199px) {}
 
 @media (max-width: 767px) {
 
+.intro , .intro_in , .intro_in1
+{
+    font-size: 15vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@keyframes size {
+    0% {
+        font-size: 17vw;
+    }
+
+    100% {
+        font-size: 15vw;
+    }
+}
+
     .about_me {
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 600;
         padding-bottom: 30px;
     }
 
     .my_info {
-        font-size: 20px;
+        font-size: 17px;
         padding: 0;
+    }
+    .works{
+        flex-direction: column;
+
+    }
+    #logos
+    {
+        width: 200px;
+        height: 280px;
+        margin: 20px;
+       
+    }
+    .works_logo
+    {
+        font-size: 30px;
+        text-align: center;
     }
 }
