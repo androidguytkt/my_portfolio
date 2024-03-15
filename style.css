@@ -391,7 +391,11 @@ font-weight: 700;
 
     .about{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .intro , .intro_in
@@ -414,32 +418,38 @@ font-weight: 700;
     }
     .my_xp
     {
-        height: 35vh;
-        width: 170px;
-        padding: 30px;
-        margin: 0px;
+        height: 50vh;
+        width: 220px;
+        padding: 5px;
+        margin-top: 30px;
+        margin-right: 0px;
+        padding: 10px;
+        margin-bottom: 60px;
+        text-align: center;
     }
 
 .xp_heading
 {
-    font-size: 18px;
+    font-size:26px;
 }
 .skills{
-    font-size: 12px;
+    font-size: 16px;
 }
 .about_me
 {
-    font-size: 20px;
+    font-size: 26px;
 }
 .my_info
 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .abin{
     padding: 0px;
     width: 35vh;
-    height: 500px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
 }
 
     @keyframes size {
