@@ -412,6 +412,35 @@ font-weight: 700;
         position: absolute;
         top: 80px;
     }
+    .my_xp
+    {
+        height: 35vh;
+        width: 170px;
+        padding: 30px;
+        margin: 0px;
+    }
+
+.xp_heading
+{
+    font-size: 18px;
+}
+.skills{
+    font-size: 12px;
+}
+.about_me
+{
+    font-size: 20px;
+}
+.my_info
+{
+    font-size: 12px;
+}
+
+.abin{
+    padding: 0px;
+    width: 35vh;
+    height: 500px;
+}
 
     @keyframes size {
         0% {
