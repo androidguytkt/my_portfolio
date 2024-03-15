@@ -15,6 +15,7 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: auto;
     height: 100vh;
     background-color:#c2ebff;
@@ -391,5 +392,50 @@ font-weight: 700;
     .about{
         display: flex;
         flex-direction: column;
+    }
+
+    .intro , .intro_in
+    {
+        font-size: 20vw;
+        position: absolute;
+        top: 300px;
+    }
+    .spacing
+    {
+        letter-spacing: 0px;
+    }
+    
+    #frontimage , #backimage
+    {
+        width: 30vh;
+        height: 30vh;
+        position: absolute;
+        top: 80px;
+    }
+
+    @keyframes size {
+        0% {
+            font-size: 25vw;
+        
+        }
+    
+        100% {
+            font-size: 20vw;
+            
+        }
+      }       
+      
+      @keyframes imagesize{
+        0% {
+        
+            width:10vh;
+            height:10vh;
+        }
+    
+        100% {
+            
+            width:30vh;
+            height: 30vh;
+        }
     }
 }
