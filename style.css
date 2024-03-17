@@ -472,6 +472,11 @@ font-weight: 700;
  
 @media (max-width: 765px) {
 
+
+    .hero
+    {
+        height: 100vh;
+    }
     .about{
         display: flex;
         flex-direction: column-reverse;
