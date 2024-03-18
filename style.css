@@ -42,7 +42,7 @@ body {
 
 .intro {
     position: absolute;
-    font-size: 10vw;
+    font-size: 144px;
     -webkit-text-stroke: 2px #000;
     font-weight: 900;
     animation: enter 1.2s ease-in, size 1.2s ease-in-out backwards;
@@ -54,7 +54,7 @@ body {
 
 .intro_in {
     position: absolute;
-    font-size: 10vw;
+    font-size: 144px;
     -webkit-text-stroke: 2px #000;
     font-weight: 900;
     -webkit-text-fill-color: transparent;
@@ -107,7 +107,7 @@ body {
 .intro_in1 {
     
     position: absolute;
-    font-size: 10vw;
+    font-size: 144px;
     -webkit-text-stroke: 2px #000;
     color: #000;
     font-weight: 900;
@@ -120,7 +120,7 @@ body {
 .intro_in2 {
     
     position: absolute;
-    font-size: 10vw;
+    font-size: 144px;
     -webkit-text-stroke: 2px #000;
     color: #000;
     font-weight: 900;
@@ -194,6 +194,7 @@ body {
     background-color:#324261;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: left;
 }
 .abblur
 {
@@ -202,7 +203,7 @@ body {
     height: 90vh;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(90%);
     background-color: rgba(60, 66, 77, 0.75);
@@ -218,6 +219,7 @@ body {
     flex-direction: column;
     width: 400px;
     height: 70vh; 
+    text-align: left;
   /* backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(90%);
     background-color: rgba(21, 23, 26, 0.75);
@@ -263,16 +265,17 @@ a{
     position: relative;
     text-align: center;
     padding-top: 10px;
+    width: 100%;
+    text-align: left;
 }
 
 .my_info {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.2;
     position: relative;
     /* top: 5vh; */
     font-weight: 700;
-    padding: 20px 50px 25px;
-    text-align: center;
+    text-align: left;
 }
 .my_xp
 {
@@ -281,9 +284,10 @@ a{
     justify-content: center;
     align-items: center;
     padding: 15px 15px;
-    height: 80vh;
-    width: 30vw;
+    height: 480px;
+    width: 500px;
     margin: 30px;
+    text-align: left;
   /*  backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(90%);
     background-color: rgba(60, 66, 77, 0.75);
@@ -384,7 +388,55 @@ font-weight: 700;
     padding-top: 35px;
 }
 */
-@media (max-width: 1023px) {
+
+
+
+@media (min-width:2400px) {
+
+
+
+    /*about section */
+    .my_info
+    {
+        font-size: 40px;
+    }
+
+    .abin{
+    width: 800px;
+    display: flex;
+    }
+
+    hr.line{
+        position: relative;
+        margin: 100px;
+    }
+.xp_heading
+{
+    font-size: 50px;
+}
+.skills
+{
+
+font-size: 35px;
+}
+
+.about_me{
+    font-size: 50px;
+}
+
+.my_xp{
+    width: 500px;
+    height: 600px;
+}
+
+    
+}
+
+
+
+
+/* for tabs and below */
+@media (max-width: 1028px) {
 
     .about_me
     {
@@ -400,16 +452,36 @@ font-weight: 700;
     {
         height: 50vh;
         padding: 30px;
+        width: 350px;
+        margin: 0px;
+    }
+
+    .xp_heading{
+        font-size: 30px;
     }
 
     .intro , .intro_in
     {
-        font-size: 8vw;
+
+        font-size: 80px;
     }
+
+    .intro_in1
+    {
+        top: 130px;
+    }
+    .intro_in2
+    {
+        bottom: 130px;
+    }
+.intro_in1 , .intro_in2
+{
+    font-size: 80px;
+}
     #frontimage , #backimage
     {
-        width: 50vh;
-        height: 50vh;
+        width: 500px;
+        height: 500px;
     }
 
     .spacing{
@@ -417,11 +489,15 @@ font-weight: 700;
     }
     .xp_heading
     {
-        font-size: 25px;
+        font-size: 30px;
     }
     .mypfp{
         width: 40px;
         height: 40px;
+    }
+    .butt{
+        padding: 20px;
+        bottom: 10vh;
     }
 
     .logoback
@@ -431,7 +507,7 @@ font-weight: 700;
     }
     
     .skills{
-        font-size: 20px;
+        font-size: 15px;
     }
 
 
@@ -443,12 +519,12 @@ font-weight: 700;
     /* animations */
     @keyframes size {
         0% {
-            font-size: 10vw;
+            font-size: 95px;
         
         }
     
         100% {
-            font-size: 8vw;
+            font-size: 80px;
             
         }
       }       
@@ -456,20 +532,20 @@ font-weight: 700;
       @keyframes imagesize{
         0% {
         
-            width:30vh;
-            height: 30vh;
+            width:400px;
+            height: 400px;
         }
     
         100% {
             
-            width:50vh;
-            height: 50vh;
+            width:500px;
+            height: 500px;
         }
     }
 
 
 }
- 
+ /* for small tabs and below */
 @media (max-width: 765px) {
 
 
@@ -531,7 +607,6 @@ font-weight: 700;
         width: 100vw;
         height: auto;
         position: absolute;
-        bottom: 70px;
     }
     .my_xp
     {
