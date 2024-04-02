@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <!-- hero section -->
@@ -13,11 +14,11 @@
            <div class="outofbg">
                <img src="background_anime.png" alt="bg" id="frontimage">
               <!----<img src="backwardcloud.jpg" alt="bg" id="backimage">-->
-               <p class="intro">HELL<span class="spacing">O  </span>THERE!</p>
-               <p class="intro_in">HELL<span class="spacing">O  </span>THERE!</p>
+               <p class="intro toptext">HELL<span class="spacing">O  </span>THERE!</p>
+               <p class="intro_in toptext">HELL<span class="spacing">O  </span>THERE!</p>
                <p class="butt"><a href="#about">I'M TANMAY</a></p>
-               <p class="intro_in1" >HELLO THERE!</p>
-               <p class="intro_in2" >HELLO THERE!</p>
+               <p class="intro_in1 toptext" >HELLO THERE!</p>
+               <p class="intro_in2 toptext" >HELLO THERE!</p>
         </div>
     </div>
     <!--about section-->
@@ -53,13 +54,77 @@
         <!--works-logos-->
   
         <div class="logo">
-            <div class="logosectionwallpaper"></div>
-            <div class="works_logo">SOME OF MY LOGO DESIGNS</div>
-            <div class="works">
-                <div class="evening"  id="logos"></div>
-                <div class="biuty" id="logos"></div>
-                <div class="gameguy" id="logos"></div>
+        <div class="moreContainer">
+            <div class="containerInside">
+
+                <div class="moreInfo">
+
+                    <div class="image-slider fade">
+                       <div class="images" id="imgur">
+                        <p class="proj_heading">ARRO!</p>
+                        <p class="proj_info">Arro was my first step into the world of electronics and iot. for me it was the project i put all my heart and soul into making.it was more than a fun project , it was my gateway to learning the core functioning of hardware and how the software and hardware works together.
+                        </p>
+                       </div>
+                        
+                    </div>
+                    <div class="image-slider fade">
+                        <div class="images" id="imgur">
+                         <p class="proj_heading">VIDEOGRAPHY</p>
+                         <p class="proj_info">Video editing for me is more like a hobby , what started as a requirement for making youtube videos, ended up becoming a vital part of my life. although the youtube channel never crossed a thousand view mark , but the skills that i learnt proved to be far more valuable.
+                         </p>
+                        </div>
+                         
+                     </div>
+                     <div class="image-slider fade">
+                        <div class="images" id="imgur">
+                         <p class="proj_heading">DIGITAL ART</p>
+                         <p class="proj_info">Digital art is one of those things that i love to do at times when i'm travelling or whenever a great idea strikes my brain.This website itself has gone through a lot of rework and design changes and remains one of my most recent designs.apart from this there are many more things like ui desing , charecter design etc. that i'm interested in.
+                         </p>
+                        </div>
+                         
+                     </div>
+                     <div class="image-slider fade">
+                        <div class="images" id="imgur">
+                         <p class="proj_heading">LOGO DESIGN</p>
+                         <p class="proj_info">same as with the videos , what bought me into logo designing was the need of making a logo that describes my channel.the first ever logo of mine was for the channel as you can see as the icon on the tab bar. after which i made a few more logos for different peoples with entirely different needs.some of them are shown in the image beside.
+                         </p>
+                        </div>
+                         
+                     </div>
+                    
+            
+                    
+                </div>
+                <div class="moreImages">
+
+                    <div class="image-sliderfade fade">
+                        <img src="img1.jpg" class="images" id="imgus"/>
+                        
+                    </div>
+            
+                    <div class="image-sliderfade fade">
+                        <img src="img2.jpg" class="images" id="imgus"/>
+                    </div>
+            
+                    <div class="image-sliderfade fade">
+                        <img src="robobg.png" class="images" id="imgus"/>
+                    </div>
+            
+                    <div class="image-sliderfade fade">
+                        <img src="img4.jpg" class="images" id="imgus"/>
+                    </div>
+
+                </div>
             </div>
+            <div class="textNumber">
+                <span class="left_button">
+					<button class="lb" id="left" onclick="moveLeft()"> < </button>
+				</span>
+				<span class="right_button">
+					<button class="rb" id="right" onclick="moveRight()"> > </button>
+				</span>
+            </div>
+        </div>
         </div>
    
 </body>
