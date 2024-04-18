@@ -427,6 +427,9 @@ button{
     border-radius: 50%;
     border: 1px solid #3f81f3;
     width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     position: relative;
     bottom: 3vh;
@@ -467,6 +470,22 @@ button{
     text-align: left;
     font-weight: 300;
     margin-top: 50px;
+}
+.arrow_straight{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: -3px;
+    top: 2px;
+    justify-content: center;
+}
+.opposite_arrow{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: -3px;
+    top: 2px;
+    transform: scaleX(-1);
 }
 
 
