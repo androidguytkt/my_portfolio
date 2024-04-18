@@ -878,7 +878,13 @@ button
 {
     flex-direction: column-reverse;
 }
+.butt:hover{
+    transition: .2s;
+    box-shadow: 0px 15px 68px 0px #2d73ff;
+    bottom: 0vh;
+    cursor:pointer;
 
+   }
 
 
 .logo{
